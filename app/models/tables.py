@@ -9,11 +9,11 @@ class Pessoa(db.Model):
     sexo = db.Column(db.String(1))
     salario = db.Column(db.Float)
 
-    def __init__(self, nome='Acrebiano', idade='25', sexo='M', salario=1.040)
-    self.nome = nome
-    self.idade = idade
-    self.sexo = sexo
-    self.salario = salario
+    def __init__(self, nome='Acrebiano', idade=25, sexo='M', salario=1040):
+        self.nome = nome
+        self.idade = idade
+        self.sexo = sexo
+        self.salario = salario
 
     def __repr__(self):
         return '<Pessoa %r>' % self.nome
